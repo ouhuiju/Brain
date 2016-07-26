@@ -1,0 +1,22 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+# Uncomment this line if you're using Swift
+# use_frameworks!
+
+target 'MyIOSBrain' do
+
+pod 'AFNetworking'
+pod 'Masonry'
+pod 'Mantle'
+pod 'Cordova', '~> 3.9.1'
+
+end
+
+target 'MyIOSBrainTests' do
+
+end
+
+target 'MyIOSBrainUITests' do
+
+end
+
