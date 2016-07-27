@@ -22,6 +22,8 @@
     
     _agendaItems = @[@"UI Technology",@"Background Technology"];
     
+    NSLog(@"update");
+    
     
 }
 
