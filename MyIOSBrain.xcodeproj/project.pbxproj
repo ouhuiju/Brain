@@ -18,6 +18,7 @@
 		0DA8D1941D479574005B2CCD /* MyIOSBrainUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA8D1931D479574005B2CCD /* MyIOSBrainUITests.m */; };
 		111D24C828DCF6DD0108EA73 /* libPods-MyIOSBrain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16FAF935C1B6F3DE325C47A5 /* libPods-MyIOSBrain.a */; };
 		B146E0DE1D49A71500E082E4 /* MyAspectsIntercepter.m in Sources */ = {isa = PBXBuildFile; fileRef = B146E0DD1D49A71500E082E4 /* MyAspectsIntercepter.m */; };
+		B1B0E3A21D49F494004230EA /* URLConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B0E3A11D49F494004230EA /* URLConfig.m */; };
 		B1CD066D1D49E70D00903D2F /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CD066C1D49E70D00903D2F /* Constant.m */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,8 @@
 		9576DCC834828EA9EED659A2 /* Pods-MyIOSBrain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyIOSBrain.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyIOSBrain/Pods-MyIOSBrain.release.xcconfig"; sourceTree = "<group>"; };
 		B146E0DC1D49A71500E082E4 /* MyAspectsIntercepter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAspectsIntercepter.h; sourceTree = "<group>"; };
 		B146E0DD1D49A71500E082E4 /* MyAspectsIntercepter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAspectsIntercepter.m; sourceTree = "<group>"; };
+		B1B0E3A01D49F494004230EA /* URLConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = URLConfig.h; path = Expand/Network/URLConfig.h; sourceTree = "<group>"; };
+		B1B0E3A11D49F494004230EA /* URLConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = URLConfig.m; path = Expand/Network/URLConfig.m; sourceTree = "<group>"; };
 		B1CD066B1D49E70D00903D2F /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constant.h; path = Expand/Const/Constant.h; sourceTree = "<group>"; };
 		B1CD066C1D49E70D00903D2F /* Constant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constant.m; path = Expand/Const/Constant.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,11 +168,105 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		B1CD065D1D49E32400903D2F /* Main */ = {
+		B1B0E3961D49F3C1004230EA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		B1B0E3971D49F3C9004230EA /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		B1B0E3981D49F3DE004230EA /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				B1B0E39C1D49F403004230EA /* Other */,
+				B1B0E39B1D49F3F6004230EA /* Controller */,
+				B1B0E39A1D49F3F2004230EA /* View */,
+				B1B0E3991D49F3ED004230EA /* Model */,
+			);
+			name = MainView;
+			sourceTree = "<group>";
+		};
+		B1B0E3991D49F3ED004230EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B1B0E39A1D49F3F2004230EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B1B0E39B1D49F3F6004230EA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				0DA8D1711D479574005B2CCD /* ViewController.h */,
 				0DA8D1721D479574005B2CCD /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B1B0E39C1D49F403004230EA /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		B1B0E3A31D49F4F6004230EA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B1B0E3A71D49F517004230EA /* Other */,
+				B1B0E3A61D49F50B004230EA /* Controller */,
+				B1B0E3A51D49F507004230EA /* View */,
+				B1B0E3A41D49F501004230EA /* Model */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		B1B0E3A41D49F501004230EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B1B0E3A51D49F507004230EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B1B0E3A61D49F50B004230EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B1B0E3A71D49F517004230EA /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		B1CD065D1D49E32400903D2F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B1B0E3A31D49F4F6004230EA /* Base */,
+				B1B0E3981D49F3DE004230EA /* MainView */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -248,6 +345,8 @@
 		B1CD06661D49E40300903D2F /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				B1B0E3971D49F3C9004230EA /* Util */,
+				B1B0E3961D49F3C1004230EA /* Helper */,
 				B1CD066A1D49E46700903D2F /* Intercepter */,
 			);
 			name = Tool;
@@ -256,6 +355,8 @@
 		B1CD06671D49E40B00903D2F /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				B1B0E3A01D49F494004230EA /* URLConfig.h */,
+				B1B0E3A11D49F494004230EA /* URLConfig.m */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -487,6 +588,7 @@
 				0DA8D1731D479574005B2CCD /* ViewController.m in Sources */,
 				0DA8D1701D479574005B2CCD /* AppDelegate.m in Sources */,
 				0DA8D16D1D479574005B2CCD /* main.m in Sources */,
+				B1B0E3A21D49F494004230EA /* URLConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
