@@ -17,6 +17,7 @@
 		0DA8D1891D479574005B2CCD /* MyIOSBrainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA8D1881D479574005B2CCD /* MyIOSBrainTests.m */; };
 		0DA8D1941D479574005B2CCD /* MyIOSBrainUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA8D1931D479574005B2CCD /* MyIOSBrainUITests.m */; };
 		111D24C828DCF6DD0108EA73 /* libPods-MyIOSBrain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16FAF935C1B6F3DE325C47A5 /* libPods-MyIOSBrain.a */; };
+		B146E0DE1D49A71500E082E4 /* MyAspectsIntercepter.m in Sources */ = {isa = PBXBuildFile; fileRef = B146E0DD1D49A71500E082E4 /* MyAspectsIntercepter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		16FAF935C1B6F3DE325C47A5 /* libPods-MyIOSBrain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyIOSBrain.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3759C7946CD9AACF33C11939 /* Pods-MyIOSBrain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyIOSBrain.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyIOSBrain/Pods-MyIOSBrain.debug.xcconfig"; sourceTree = "<group>"; };
 		9576DCC834828EA9EED659A2 /* Pods-MyIOSBrain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyIOSBrain.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyIOSBrain/Pods-MyIOSBrain.release.xcconfig"; sourceTree = "<group>"; };
+		B146E0DC1D49A71500E082E4 /* MyAspectsIntercepter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAspectsIntercepter.h; sourceTree = "<group>"; };
+		B146E0DD1D49A71500E082E4 /* MyAspectsIntercepter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAspectsIntercepter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 				0DA8D16F1D479574005B2CCD /* AppDelegate.m */,
 				0DA8D1711D479574005B2CCD /* ViewController.h */,
 				0DA8D1721D479574005B2CCD /* ViewController.m */,
+				B146E0DC1D49A71500E082E4 /* MyAspectsIntercepter.h */,
+				B146E0DD1D49A71500E082E4 /* MyAspectsIntercepter.m */,
 				0DA8D1741D479574005B2CCD /* Main.storyboard */,
 				0DA8D17A1D479574005B2CCD /* Assets.xcassets */,
 				0DA8D17C1D479574005B2CCD /* LaunchScreen.storyboard */,
@@ -359,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B146E0DE1D49A71500E082E4 /* MyAspectsIntercepter.m in Sources */,
 				0DA8D1791D479574005B2CCD /* MyIOSBrain.xcdatamodeld in Sources */,
 				0DA8D1731D479574005B2CCD /* ViewController.m in Sources */,
 				0DA8D1701D479574005B2CCD /* AppDelegate.m in Sources */,

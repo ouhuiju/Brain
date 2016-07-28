@@ -9,6 +9,7 @@ pod 'AFNetworking'
 pod 'Masonry'
 pod 'Mantle'
 pod 'Cordova', '~> 3.9.1'
+pod 'Aspects'
 
 end
 

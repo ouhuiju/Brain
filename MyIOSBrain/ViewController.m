@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MyAspectsIntercepter.h"
 
 @interface ViewController ()
 
@@ -16,14 +17,14 @@
 
 @implementation ViewController
 
++ (void)load {
+    [[MyAspectsIntercepter sharedInstance] hookEvent];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"MyIOSBrain";
-    
-    _agendaItems = @[@"UI Technology",@"Background Technology"];
-    
-    NSLog(@"update");
-    
+    _agendaItems = @[@"UI Technology",@"Back-End Technology"];
     
 }
 
@@ -45,19 +46,26 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self aspectListener];
 }
 
-- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
-}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"rootCellIdentifier"];
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"rootCellIdentifier" forIndexPath:indexPath];
-
     cell.textLabel.text = _agendaItems[indexPath.row];
     
     return cell;
+}
+
+/**
+ *  @author OKAR OU (EUCD-EUC-ISD-OOCLL/ZHA), 16-07-28 11:07:11
+ *
+ *  this function for test AOP.
+ */
+- (void)aspectListener {
+    NSLog(@"aspectListener");
 }
 
 @end
