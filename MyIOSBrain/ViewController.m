@@ -17,15 +17,11 @@
 
 @implementation ViewController
 
-+ (void)load {
-    [[MyAspectsIntercepter sharedInstance] hookEvent];
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"MyIOSBrain";
+//    self.title = @"Native";
     _agendaItems = @[@"UI Technology",@"Back-End Technology"];
-    
+    [[MyAspectsIntercepter sharedInstance] hookEvent];
 }
 
 - (void)didReceiveMemoryWarning {

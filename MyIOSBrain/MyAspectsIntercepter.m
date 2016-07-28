@@ -41,7 +41,7 @@
             [self viewWillAppear:animated viewController:[aspectInfo instance]];
         } error:NULL];
         
-
+        
     }
     return self;
 }
@@ -65,6 +65,7 @@
 
 - (void)aspectListener:(ViewController *)viewController {
     NSLog(@"aspectListener in MyAspectsIntercepter");
+    NSLog(@"[%@ aspectListener]", [viewController class]);
 }
 
 @end

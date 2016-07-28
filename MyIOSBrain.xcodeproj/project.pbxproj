@@ -18,6 +18,7 @@
 		0DA8D1941D479574005B2CCD /* MyIOSBrainUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA8D1931D479574005B2CCD /* MyIOSBrainUITests.m */; };
 		111D24C828DCF6DD0108EA73 /* libPods-MyIOSBrain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16FAF935C1B6F3DE325C47A5 /* libPods-MyIOSBrain.a */; };
 		B146E0DE1D49A71500E082E4 /* MyAspectsIntercepter.m in Sources */ = {isa = PBXBuildFile; fileRef = B146E0DD1D49A71500E082E4 /* MyAspectsIntercepter.m */; };
+		B1CD066D1D49E70D00903D2F /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CD066C1D49E70D00903D2F /* Constant.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		9576DCC834828EA9EED659A2 /* Pods-MyIOSBrain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyIOSBrain.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyIOSBrain/Pods-MyIOSBrain.release.xcconfig"; sourceTree = "<group>"; };
 		B146E0DC1D49A71500E082E4 /* MyAspectsIntercepter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAspectsIntercepter.h; sourceTree = "<group>"; };
 		B146E0DD1D49A71500E082E4 /* MyAspectsIntercepter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAspectsIntercepter.m; sourceTree = "<group>"; };
+		B1CD066B1D49E70D00903D2F /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constant.h; path = Expand/Const/Constant.h; sourceTree = "<group>"; };
+		B1CD066C1D49E70D00903D2F /* Constant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constant.m; path = Expand/Const/Constant.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,18 +117,14 @@
 		0DA8D16A1D479574005B2CCD /* MyIOSBrain */ = {
 			isa = PBXGroup;
 			children = (
-				0DA8D1A11D47985E005B2CCD /* MyIOSBrain.entitlements */,
+				B1CD06601D49E36100903D2F /* Vender */,
+				B1CD065E1D49E33400903D2F /* Expand */,
+				B1CD065D1D49E32400903D2F /* Main */,
+				B1CD065F1D49E34300903D2F /* Resource */,
+				0DA8D1741D479574005B2CCD /* Main.storyboard */,
+				0DA8D17C1D479574005B2CCD /* LaunchScreen.storyboard */,
 				0DA8D16E1D479574005B2CCD /* AppDelegate.h */,
 				0DA8D16F1D479574005B2CCD /* AppDelegate.m */,
-				0DA8D1711D479574005B2CCD /* ViewController.h */,
-				0DA8D1721D479574005B2CCD /* ViewController.m */,
-				B146E0DC1D49A71500E082E4 /* MyAspectsIntercepter.h */,
-				B146E0DD1D49A71500E082E4 /* MyAspectsIntercepter.m */,
-				0DA8D1741D479574005B2CCD /* Main.storyboard */,
-				0DA8D17A1D479574005B2CCD /* Assets.xcassets */,
-				0DA8D17C1D479574005B2CCD /* LaunchScreen.storyboard */,
-				0DA8D17F1D479574005B2CCD /* Info.plist */,
-				0DA8D1771D479574005B2CCD /* MyIOSBrain.xcdatamodeld */,
 				0DA8D16B1D479574005B2CCD /* Supporting Files */,
 			);
 			path = MyIOSBrain;
@@ -164,6 +163,124 @@
 				9576DCC834828EA9EED659A2 /* Pods-MyIOSBrain.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B1CD065D1D49E32400903D2F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0DA8D1711D479574005B2CCD /* ViewController.h */,
+				0DA8D1721D479574005B2CCD /* ViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		B1CD065E1D49E33400903D2F /* Expand */ = {
+			isa = PBXGroup;
+			children = (
+				B1CD06691D49E42600903D2F /* Database */,
+				B1CD06681D49E41600903D2F /* Category */,
+				B1CD06671D49E40B00903D2F /* Network */,
+				B1CD06661D49E40300903D2F /* Tool */,
+				B1CD06651D49E3FB00903D2F /* Macros */,
+				B1CD06641D49E3EE00903D2F /* Const */,
+			);
+			name = Expand;
+			sourceTree = "<group>";
+		};
+		B1CD065F1D49E34300903D2F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B1CD06631D49E3A400903D2F /* Plist */,
+				B1CD06621D49E39E00903D2F /* Image */,
+				B1CD06611D49E39300903D2F /* Global */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		B1CD06601D49E36100903D2F /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Vender;
+			sourceTree = "<group>";
+		};
+		B1CD06611D49E39300903D2F /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				0DA8D1A11D47985E005B2CCD /* MyIOSBrain.entitlements */,
+				0DA8D1771D479574005B2CCD /* MyIOSBrain.xcdatamodeld */,
+			);
+			name = Global;
+			sourceTree = "<group>";
+		};
+		B1CD06621D49E39E00903D2F /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				0DA8D17A1D479574005B2CCD /* Assets.xcassets */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		B1CD06631D49E3A400903D2F /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				0DA8D17F1D479574005B2CCD /* Info.plist */,
+			);
+			name = Plist;
+			sourceTree = "<group>";
+		};
+		B1CD06641D49E3EE00903D2F /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				B1CD066B1D49E70D00903D2F /* Constant.h */,
+				B1CD066C1D49E70D00903D2F /* Constant.m */,
+			);
+			name = Const;
+			sourceTree = "<group>";
+		};
+		B1CD06651D49E3FB00903D2F /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Macros;
+			sourceTree = "<group>";
+		};
+		B1CD06661D49E40300903D2F /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				B1CD066A1D49E46700903D2F /* Intercepter */,
+			);
+			name = Tool;
+			sourceTree = "<group>";
+		};
+		B1CD06671D49E40B00903D2F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		B1CD06681D49E41600903D2F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		B1CD06691D49E42600903D2F /* Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		B1CD066A1D49E46700903D2F /* Intercepter */ = {
+			isa = PBXGroup;
+			children = (
+				B146E0DC1D49A71500E082E4 /* MyAspectsIntercepter.h */,
+				B146E0DD1D49A71500E082E4 /* MyAspectsIntercepter.m */,
+			);
+			name = Intercepter;
 			sourceTree = "<group>";
 		};
 		DC803A365635F84F26B2F6C0 /* Frameworks */ = {
@@ -365,6 +482,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B146E0DE1D49A71500E082E4 /* MyAspectsIntercepter.m in Sources */,
+				B1CD066D1D49E70D00903D2F /* Constant.m in Sources */,
 				0DA8D1791D479574005B2CCD /* MyIOSBrain.xcdatamodeld in Sources */,
 				0DA8D1731D479574005B2CCD /* ViewController.m in Sources */,
 				0DA8D1701D479574005B2CCD /* AppDelegate.m in Sources */,

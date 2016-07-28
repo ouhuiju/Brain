@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XfF-ho-FOB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="d91-sf-ana">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Native-->
         <scene sceneID="h5E-Lc-DUC">
             <objects>
                 <tableViewController id="j2j-fA-5j0" customClass="ViewController" sceneMemberID="viewController">
@@ -28,16 +28,38 @@
                             <outlet property="delegate" destination="j2j-fA-5j0" id="fLU-0e-PWh"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="c1L-0C-YHU"/>
+                    <navigationItem key="navigationItem" title="Native" id="c1L-0C-YHU"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QSx-Dw-ius" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="708" y="864"/>
+            <point key="canvasLocation" x="1155" y="1154"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="ocQ-ut-yju">
+            <objects>
+                <tabBarController id="d91-sf-ana" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" itemPositioning="fill" id="vG7-aY-4Ma">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" red="1" green="1" blue="1" alpha="0.79867995690000004" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="XfF-ho-FOB" kind="relationship" relationship="viewControllers" id="WH2-7s-NFm"/>
+                        <segue destination="bQk-iD-fo8" kind="relationship" relationship="viewControllers" id="lLC-2c-jZT"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gdC-vH-Z1f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-412" y="1837"/>
+        </scene>
+        <!--Native-->
         <scene sceneID="EHf-W3-AtG">
             <objects>
                 <navigationController id="XfF-ho-FOB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Native" image="Heart_Balloon" selectedImage="Heart_Balloon_Filled" id="raf-bg-bdy">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4JH-6w-acU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -48,7 +70,32 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wMC-Zs-ZO0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-112" y="863"/>
+            <point key="canvasLocation" x="338" y="1154"/>
+        </scene>
+        <!--Hybrid-->
+        <scene sceneID="lPh-yw-eDM">
+            <objects>
+                <viewController id="bQk-iD-fo8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qYs-2G-d7r"/>
+                        <viewControllerLayoutGuide type="bottom" id="wTX-WI-4Ny"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Ia-OU-CTH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Hybrid" image="Term" selectedImage="Term_Filled" id="lkL-TV-eTb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4lu-Uz-eoH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="343" y="2090"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Heart_Balloon" width="50" height="50"/>
+        <image name="Heart_Balloon_Filled" width="50" height="50"/>
+        <image name="Term" width="50" height="50"/>
+        <image name="Term_Filled" width="50" height="50"/>
+    </resources>
 </document>
