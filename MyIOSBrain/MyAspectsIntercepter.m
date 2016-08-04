@@ -10,7 +10,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <Aspects/Aspects.h>
-#import "ViewController.h"
+#import "AOPStore.h"
 
 @implementation MyAspectsIntercepter
 
@@ -47,7 +47,7 @@
 }
 
 - (void)hookEvent {
-    [ViewController aspect_hookSelector:@selector(aspectListener) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo){
+    [AOPStore aspect_hookSelector:@selector(aspectListener) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo){
         [self aspectListener:[aspectInfo instance]];
     } error:NULL];
 }
@@ -63,9 +63,9 @@
     NSLog(@"[%@ viewWillAppear:%@]", [viewController class], animated ? @"YES" : @"NO");
 }
 
-- (void)aspectListener:(ViewController *)viewController {
+- (void)aspectListener:(AOPStore *)AOPStore {
     NSLog(@"aspectListener in MyAspectsIntercepter");
-    NSLog(@"[%@ aspectListener]", [viewController class]);
+    NSLog(@"[%@ aspectListener]", [AOPStore class]);
 }
 
 @end

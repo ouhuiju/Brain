@@ -57,9 +57,7 @@
         <scene sceneID="EHf-W3-AtG">
             <objects>
                 <navigationController id="XfF-ho-FOB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Native" image="Heart_Balloon" selectedImage="Heart_Balloon_Filled" id="raf-bg-bdy">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Native" image="tabbar_icon_chat" selectedImage="tabbar_icon_chat" id="raf-bg-bdy"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4JH-6w-acU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -85,7 +83,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Hybrid" image="Term" selectedImage="Term_Filled" id="lkL-TV-eTb"/>
+                    <tabBarItem key="tabBarItem" title="Hybrid" image="tabbar_icon_shipment" selectedImage="tabbar_icon_shipment" id="lkL-TV-eTb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4lu-Uz-eoH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -93,9 +91,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Heart_Balloon" width="50" height="50"/>
-        <image name="Heart_Balloon_Filled" width="50" height="50"/>
-        <image name="Term" width="50" height="50"/>
-        <image name="Term_Filled" width="50" height="50"/>
+        <image name="tabbar_icon_chat" width="27" height="25"/>
+        <image name="tabbar_icon_shipment" width="32" height="27"/>
     </resources>
 </document>

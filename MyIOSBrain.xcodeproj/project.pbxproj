@@ -12,14 +12,16 @@
 		0DA8D1731D479574005B2CCD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA8D1721D479574005B2CCD /* ViewController.m */; };
 		0DA8D1761D479574005B2CCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DA8D1741D479574005B2CCD /* Main.storyboard */; };
 		0DA8D1791D479574005B2CCD /* MyIOSBrain.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0DA8D1771D479574005B2CCD /* MyIOSBrain.xcdatamodeld */; };
-		0DA8D17B1D479574005B2CCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DA8D17A1D479574005B2CCD /* Assets.xcassets */; };
 		0DA8D17E1D479574005B2CCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DA8D17C1D479574005B2CCD /* LaunchScreen.storyboard */; };
 		0DA8D1891D479574005B2CCD /* MyIOSBrainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA8D1881D479574005B2CCD /* MyIOSBrainTests.m */; };
 		0DA8D1941D479574005B2CCD /* MyIOSBrainUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA8D1931D479574005B2CCD /* MyIOSBrainUITests.m */; };
-		111D24C828DCF6DD0108EA73 /* libPods-MyIOSBrain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16FAF935C1B6F3DE325C47A5 /* libPods-MyIOSBrain.a */; };
+		2016FB08ABB0732BC4DE55B3 /* Pods_MyIOSBrain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11BAC1D23CE8B4B4A78ACCF8 /* Pods_MyIOSBrain.framework */; };
+		B12042FF1D4AE46E006BC420 /* AOPStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B12042FE1D4AE46E006BC420 /* AOPStore.m */; };
 		B146E0DE1D49A71500E082E4 /* MyAspectsIntercepter.m in Sources */ = {isa = PBXBuildFile; fileRef = B146E0DD1D49A71500E082E4 /* MyAspectsIntercepter.m */; };
 		B1B0E3A21D49F494004230EA /* URLConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B0E3A11D49F494004230EA /* URLConfig.m */; };
 		B1CD066D1D49E70D00903D2F /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CD066C1D49E70D00903D2F /* Constant.m */; };
+		B1D95C121D5330F100AE23CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1D95C111D5330F100AE23CE /* Assets.xcassets */; };
+		B1D95C151D5331BD00AE23CE /* BlueToothUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D95C141D5331BD00AE23CE /* BlueToothUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +50,6 @@
 		0DA8D1721D479574005B2CCD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0DA8D1751D479574005B2CCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0DA8D1781D479574005B2CCD /* MyIOSBrain.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyIOSBrain.xcdatamodel; sourceTree = "<group>"; };
-		0DA8D17A1D479574005B2CCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DA8D17D1D479574005B2CCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DA8D17F1D479574005B2CCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DA8D1841D479574005B2CCD /* MyIOSBrainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyIOSBrainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,15 +59,20 @@
 		0DA8D1931D479574005B2CCD /* MyIOSBrainUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyIOSBrainUITests.m; sourceTree = "<group>"; };
 		0DA8D1951D479574005B2CCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DA8D1A11D47985E005B2CCD /* MyIOSBrain.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MyIOSBrain.entitlements; sourceTree = "<group>"; };
-		16FAF935C1B6F3DE325C47A5 /* libPods-MyIOSBrain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyIOSBrain.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11BAC1D23CE8B4B4A78ACCF8 /* Pods_MyIOSBrain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyIOSBrain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3759C7946CD9AACF33C11939 /* Pods-MyIOSBrain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyIOSBrain.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyIOSBrain/Pods-MyIOSBrain.debug.xcconfig"; sourceTree = "<group>"; };
 		9576DCC834828EA9EED659A2 /* Pods-MyIOSBrain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyIOSBrain.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyIOSBrain/Pods-MyIOSBrain.release.xcconfig"; sourceTree = "<group>"; };
+		B12042FD1D4AE46E006BC420 /* AOPStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AOPStore.h; path = Main/AOPStore.h; sourceTree = "<group>"; };
+		B12042FE1D4AE46E006BC420 /* AOPStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AOPStore.m; path = Main/AOPStore.m; sourceTree = "<group>"; };
 		B146E0DC1D49A71500E082E4 /* MyAspectsIntercepter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAspectsIntercepter.h; sourceTree = "<group>"; };
 		B146E0DD1D49A71500E082E4 /* MyAspectsIntercepter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAspectsIntercepter.m; sourceTree = "<group>"; };
 		B1B0E3A01D49F494004230EA /* URLConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = URLConfig.h; path = Expand/Network/URLConfig.h; sourceTree = "<group>"; };
 		B1B0E3A11D49F494004230EA /* URLConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = URLConfig.m; path = Expand/Network/URLConfig.m; sourceTree = "<group>"; };
 		B1CD066B1D49E70D00903D2F /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constant.h; path = Expand/Const/Constant.h; sourceTree = "<group>"; };
 		B1CD066C1D49E70D00903D2F /* Constant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constant.m; path = Expand/Const/Constant.m; sourceTree = "<group>"; };
+		B1D95C111D5330F100AE23CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1D95C131D5331BD00AE23CE /* BlueToothUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlueToothUtil.h; path = Expand/Tool/Util/BlueToothUtil.h; sourceTree = "<group>"; };
+		B1D95C141D5331BD00AE23CE /* BlueToothUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BlueToothUtil.m; path = Expand/Tool/Util/BlueToothUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				111D24C828DCF6DD0108EA73 /* libPods-MyIOSBrain.a in Frameworks */,
+				2016FB08ABB0732BC4DE55B3 /* Pods_MyIOSBrain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +184,8 @@
 		B1B0E3971D49F3C9004230EA /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				B1D95C131D5331BD00AE23CE /* BlueToothUtil.h */,
+				B1D95C141D5331BD00AE23CE /* BlueToothUtil.m */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -219,6 +227,8 @@
 		B1B0E39C1D49F403004230EA /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				B12042FD1D4AE46E006BC420 /* AOPStore.h */,
+				B12042FE1D4AE46E006BC420 /* AOPStore.m */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -313,7 +323,7 @@
 		B1CD06621D49E39E00903D2F /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				0DA8D17A1D479574005B2CCD /* Assets.xcassets */,
+				B1D95C111D5330F100AE23CE /* Assets.xcassets */,
 			);
 			name = Image;
 			sourceTree = "<group>";
@@ -387,7 +397,7 @@
 		DC803A365635F84F26B2F6C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				16FAF935C1B6F3DE325C47A5 /* libPods-MyIOSBrain.a */,
+				11BAC1D23CE8B4B4A78ACCF8 /* Pods_MyIOSBrain.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -508,7 +518,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DA8D17E1D479574005B2CCD /* LaunchScreen.storyboard in Resources */,
-				0DA8D17B1D479574005B2CCD /* Assets.xcassets in Resources */,
+				B1D95C121D5330F100AE23CE /* Assets.xcassets in Resources */,
 				0DA8D1761D479574005B2CCD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,6 +598,8 @@
 				0DA8D1731D479574005B2CCD /* ViewController.m in Sources */,
 				0DA8D1701D479574005B2CCD /* AppDelegate.m in Sources */,
 				0DA8D16D1D479574005B2CCD /* main.m in Sources */,
+				B1D95C151D5331BD00AE23CE /* BlueToothUtil.m in Sources */,
+				B12042FF1D4AE46E006BC420 /* AOPStore.m in Sources */,
 				B1B0E3A21D49F494004230EA /* URLConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "MyAspectsIntercepter.h"
+#import "AOPStore.h"
 
 @interface ViewController ()
 
@@ -19,14 +20,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.title = @"Native";
+    //    self.title = @"Native";
     _agendaItems = @[@"UI Technology",@"Back-End Technology"];
     [[MyAspectsIntercepter sharedInstance] hookEvent];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (void)initTableView {
@@ -43,9 +43,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    [self aspectListener];
+    
+    [[AOPStore sharedInstance] aspectListener];
 }
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -53,15 +53,6 @@
     cell.textLabel.text = _agendaItems[indexPath.row];
     
     return cell;
-}
-
-/**
- *  @author OKAR OU (EUCD-EUC-ISD-OOCLL/ZHA), 16-07-28 11:07:11
- *
- *  this function for test AOP.
- */
-- (void)aspectListener {
-    NSLog(@"aspectListener");
 }
 
 @end

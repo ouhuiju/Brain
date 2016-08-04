@@ -10,7 +10,5 @@
 
 @interface ViewController : UITableViewController<UITableViewDelegate, UITableViewDataSource>
 
-- (void)aspectListener;
-
 @end
 
