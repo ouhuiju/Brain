@@ -22,6 +22,7 @@
 		B1CD066D1D49E70D00903D2F /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CD066C1D49E70D00903D2F /* Constant.m */; };
 		B1D95C121D5330F100AE23CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1D95C111D5330F100AE23CE /* Assets.xcassets */; };
 		B1D95C151D5331BD00AE23CE /* BlueToothUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D95C141D5331BD00AE23CE /* BlueToothUtil.m */; };
+		B1D95C1B1D5338F800AE23CE /* NSObject+XWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D95C1A1D5338F800AE23CE /* NSObject+XWAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		B1D95C111D5330F100AE23CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1D95C131D5331BD00AE23CE /* BlueToothUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlueToothUtil.h; path = Expand/Tool/Util/BlueToothUtil.h; sourceTree = "<group>"; };
 		B1D95C141D5331BD00AE23CE /* BlueToothUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BlueToothUtil.m; path = Expand/Tool/Util/BlueToothUtil.m; sourceTree = "<group>"; };
+		B1D95C191D5338F800AE23CE /* NSObject+XWAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+XWAdd.h"; path = "Expand/Category/NSObject+XWAdd.h"; sourceTree = "<group>"; };
+		B1D95C1A1D5338F800AE23CE /* NSObject+XWAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+XWAdd.m"; path = "Expand/Category/NSObject+XWAdd.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -374,6 +377,8 @@
 		B1CD06681D49E41600903D2F /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				B1D95C191D5338F800AE23CE /* NSObject+XWAdd.h */,
+				B1D95C1A1D5338F800AE23CE /* NSObject+XWAdd.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -598,6 +603,7 @@
 				0DA8D1731D479574005B2CCD /* ViewController.m in Sources */,
 				0DA8D1701D479574005B2CCD /* AppDelegate.m in Sources */,
 				0DA8D16D1D479574005B2CCD /* main.m in Sources */,
+				B1D95C1B1D5338F800AE23CE /* NSObject+XWAdd.m in Sources */,
 				B1D95C151D5331BD00AE23CE /* BlueToothUtil.m in Sources */,
 				B12042FF1D4AE46E006BC420 /* AOPStore.m in Sources */,
 				B1B0E3A21D49F494004230EA /* URLConfig.m in Sources */,
