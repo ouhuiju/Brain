@@ -9,6 +9,10 @@
 #import "ViewController.h"
 #import "MyAspectsIntercepter.h"
 #import "AOPStore.h"
+#import "ReactiveCocoa.h"
+#import "RACViewController.h"
+
+@class RACSignal;
 
 @interface ViewController ()
 
@@ -43,6 +47,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    if (indexPath.row == 1) {
+        [self.navigationController pushViewController:[RACViewController new] animated:YES];
+    }
     
     [[AOPStore sharedInstance] aspectListener];
 }
