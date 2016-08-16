@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <WebViewJavascriptBridge/WebViewJavascriptBridge.h>
+#import <WebKit/WebKit.h>
+#import <WebViewJavascriptBridge/WKWebViewJavascriptBridge.h>
+#import "Masonry.h"
 
-@interface HybridViewController : UIViewController
+@interface HybridViewController : UIViewController<WKNavigationDelegate, WKUIDelegate>
 
-@property (strong, nonatomic) IBOutlet UIWebView *hybridWebView;
+@property (strong, nonatomic) WKWebView *hybridWebView;
+@property (strong, nonatomic) WKWebViewJavascriptBridge *bridge;
 
 @end

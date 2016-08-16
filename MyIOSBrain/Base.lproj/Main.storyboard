@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Native-->
@@ -82,24 +81,9 @@
                     <view key="view" contentMode="scaleToFill" id="2Ia-OU-CTH">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jvK-qD-IbI">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                            </webView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="jvK-qD-IbI" firstAttribute="top" secondItem="2Ia-OU-CTH" secondAttribute="topMargin" id="11e-Fj-JFP"/>
-                            <constraint firstItem="jvK-qD-IbI" firstAttribute="leading" secondItem="2Ia-OU-CTH" secondAttribute="leadingMargin" constant="-20" id="BUn-AA-FMb"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="jvK-qD-IbI" secondAttribute="trailing" constant="-20" id="aKr-UJ-mTN"/>
-                            <constraint firstItem="wTX-WI-4Ny" firstAttribute="top" secondItem="jvK-qD-IbI" secondAttribute="bottom" id="gB2-LB-yrN"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Hybrid" image="tabbar_icon_shipment" selectedImage="tabbar_icon_shipment" id="lkL-TV-eTb"/>
-                    <connections>
-                        <outlet property="hybridWebView" destination="jvK-qD-IbI" id="NVx-OS-LIg"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4lu-Uz-eoH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

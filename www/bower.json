@@ -14,5 +14,11 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "Framework7": "framework7#^1.4.2",
+    "jQuery": "^2.2.1",
+    "knockout": "^3.4.0",
+    "vue": "^1.0.26"
+  }
 }
