@@ -10,7 +10,7 @@
 
 	<title>MyIOSBrain</title>
 	<!-- Path to Framework7 iOS CSS theme styles-->
-	<link rel="stylesheet" href="../../bower_components/Framework7/dist/css/framework7.ios.min.css">
+	<link rel="stylesheet" href="../../bower_components/Framework7/dist/css/framework7.ios.css">
 	<!-- Path to Framework7 iOS related color styles -->
 	<link rel="stylesheet" href="../../bower_components/Framework7/dist/css/framework7.ios.colors.min.css">
 	<link rel="stylesheet" href="../../css/app.css">
@@ -18,18 +18,48 @@
 
 <body>
 	<div class="statusbar-overlay"></div>
+	<!-- Main Menu Page -->
+	<div class="views">
+		<!-- Your main view, should have "view-main" class-->
+		<div class="view view-main">
+			<!--Fetured Page-->
+			<div id="homeView" class="view view-main">
+				<div class="pages navbar-through">
+					<div data-page="home" class="page" id="indexViewModel">
+						<!-- Top Navbar-->
+						<div class="navbar">
+							<div class="navbar-inner">
+								<div class="center sliding">Hybrid</div>
+							</div>
+						</div>
+						<!-- Scrollable page content -->
+						<div class="page-content">
+							<div class="list-block">
+								<ul>
+									<li v-for="todo in todos" class="item-content">
+										<div class="item-inner">
+											<div class="item-title">
+												{{ todo.text }}
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 
-	<div id="app">
-		{{ message }}
+				</div>
+			</div>
+		</div>
 	</div>
-
 
 	<!--include lib JS file-->
 	<script type="text/javascript" src="../../bower_components/jQuery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="../../bower_components/knockout/dist/knockout.js"></script>
 	<script type="text/javascript" src="../../bower_components/Framework7/dist/js/framework7.js"></script>
 	<script type="text/javascript" src="../../bower_components/vue/dist/vue.min.js"></script>
-
+	<script type="text/javascript" src="../../js/common/webViewJavascriptBridge.js"></script>
+	<script type="text/javascript" src="../../js/common/F7.js"></script>
 	<script type="text/javascript" src="../../js/index.js"></script>
 </body>
 
