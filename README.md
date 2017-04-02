@@ -1,2 +1,2 @@
-# MyIOSBrain
-把学的纪录下来.
+# Brain
+Learn step by step.
